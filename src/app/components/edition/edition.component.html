@@ -1,0 +1,42 @@
+<h2>Edicion</h2>
+<button (click)="editingItems()">editingItems</button>
+<div [hidden]="!mostrar_editingItems">
+  <p>Una línea de tiempo editable permite arrastrar, crear y eliminar elementos. Los cambios se registran en la consola
+    del navegador.</p>
+  <div id="editingItems"></div>
+  <div id="log" style="overflow-y: auto; height:150px;"></div>
+</div>
+<br>
+<button (click)="individualEditableItems()">individualEditableItems</button>
+<div [hidden]="!mostrar_individualEditableItems">
+  <p>Se puede especificar elementos individuales para ser editables o de solo lectura.</p>
+  <div id="individualEditableItems"></div>
+</div>
+<br>
+<button (click)="overrideEditingItems()">overrideEditingItems</button>
+<div [hidden]="!mostrar_overrideEditingItems">
+  <p>
+    Se puede especificar elementos individuales para ser editables o de solo lectura. Pulsar para ir alternando
+    opciones de edicion y eliminar comportamientos del timeline.editable.
+  </p>
+  <div id="overrideEditingItems"></div>
+  <p>
+    Timeline.editable = {{'{'}}<br>
+    <input type="checkbox" name="add" checked />add<br>
+    <input type="checkbox" name="remove" checked />remove<br>
+    <input type="checkbox" name="updateGroup" />updateGroup<br>
+    <input type="checkbox" name="updateTime" checked />updateTime<br>
+    <input type="checkbox" name="overrideItems" />overrideItems<br>
+    {{'}'}}
+  </p>
+</div>
+<br>
+<button (click)="updateDataOnEvent()">updateDataOnEvent</button>
+<div [hidden]="!mostrar_updateDataOnEvent">
+  <p>
+    Se puede especificar elementos individuales para ser editables o de solo lectura. Pulsar para ir alternando
+    opciones de edicion y eliminar comportamientos del timeline.editable.
+  </p>
+  <div id="customTime">&nbsp;</div>
+  <div id="updateDataOnEvent"></div>
+</div>

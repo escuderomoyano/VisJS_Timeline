@@ -1,0 +1,24 @@
+<h2>Items</h2>
+<button (click)="backgroundAreas()">BackgroundAreas</button>
+<div [hidden]="!mostrar_backgroundAreas">
+  <p>
+    Este ejemplo muestra el tipo de elemento "fondo", consulte "Período A" y "Período B". Las áreas de fondo se pueden diseñar con css.
+  </p>
+  <div id="backgroundAreas"></div>
+</div>
+<br>
+<button (click)="htmlContents()">htmlContents</button>
+<div [hidden]="!mostrar_htmlContents">
+  <p>
+    Cargar contenidos HTML en la línea de tiempo de varias maneras.
+  </p>
+  <div id="htmlContents"></div>
+</div>
+<br>
+<button (click)="visibleDynamicContent()">DynamicContent</button>
+<div [hidden]="!mostrar_visibleDynamicContent">
+  <p>
+    Se podra indicar un porcentaje en cada item usando CSS
+  </p>
+  <div id="visibleDynamicContent"></div>
+</div>

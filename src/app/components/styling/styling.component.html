@@ -1,0 +1,37 @@
+<h2>Stylling</h2>
+
+<button (click)="axisOrientation()">axisOrientation</button>
+<div [hidden]="!mostrar_axisOrientation" id="axisOrientationContenido">
+  <p>
+    Hay una serie de opciones de orientación para el eje de tiempo y los elementos.
+  </p>
+  <p>
+    <label for="axis-orientation">Orientacion del eje</label>
+    <select id="axis-orientation">
+      <option value="both">Ambos</option>
+      <option value="bottom" selected>Inferior</option>
+      <option value="none">Ninguna</option>
+      <option value="top">Superior</option>
+    </select>
+  </p>
+  <p>
+    <label for="item-orientation">Orientacion de Items</label>
+    <select id="item-orientation">
+      <option value="bottom" selected>Inferior</option>
+      <option value="top">Superior</option>
+    </select>
+  </p>
+  <div id="axisOrientation"></div>
+</div>
+<br>
+<button (click)="customCss()">customCss</button>
+<div [hidden]="!mostrar_customCss" id="customCssContenido">
+  <p>El estilo de la línea de tiempo se puede personalizar con CSS.</p>
+  <div id="customCss"></div>
+</div>
+<br>
+<button (click)="itemClassNames()">itemClassNames</button>
+<div [hidden]="!mostrar_itemClassNames" id="itemClassNamesContenido">
+  <p>Esta página muestra la línea de tiempo con clases de CSS individuales.</p>
+  <div id="itemClassNames"></div>
+</div>

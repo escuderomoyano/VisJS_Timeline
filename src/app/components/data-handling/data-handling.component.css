@@ -1,0 +1,17 @@
+#dataSerializationContenido {
+    font-family: arial, sans-serif;
+    font-size: 11pt;
+}
+
+textarea {
+    width: 800px;
+    height: 200px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons input {
+    padding: 10px;
+}

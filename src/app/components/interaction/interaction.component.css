@@ -1,0 +1,14 @@
+body, html {
+    font-family: arial, sans-serif;
+    font-size: 11pt;
+}
+input {
+    margin: 2px 0;
+}
+#main {
+    width: 728px;
+    margin: 0 auto;
+}
+.container {
+    margin: 10px;
+}

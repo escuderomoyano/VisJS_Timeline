@@ -1,0 +1,47 @@
+<h2>Data-Handling</h2>
+
+<button (click)="dataSerialization()">dataSerialization</button>
+<div [hidden]="!mostrar_dataSerialization" id="dataSerializationContenido">
+  <h5>Serializacion de los datos</h5>
+  <textarea id="data" style="width: 800px; height: 200px;">
+  [
+    {
+      "id": 1,
+      "content": "Contenido 1",
+      "start": "2018-12-01T01:00:00"
+    },
+    {
+      "id": 2,
+      "content": "Contenido 2",
+      "start": "2018-12-01T02:00:00"
+    },
+    {
+      "id": 3,
+      "content": "Contenido 3",
+      "start": "2018-12-01T03:00:00"
+    },
+    {
+      "id": 4,
+      "content": "Contenido 4",
+      "start": "2018-12-01T04:00:00",
+      "end": "2018-12-01T04:30:00"
+    },
+    {
+      "id": 5,
+      "content": "Contenido 5",
+      "start": "2018-12-01T05:00:00",
+      "type": "point"
+    },
+    {
+      "id": 6,
+      "content": "Contenido 6",
+      "start": "2018-12-01T06:00:00"
+    }
+  ]
+</textarea>
+  <div class="buttons">
+    <input type="button" id="load" value="&darr; Cargar" title="Cargar datos del textarea al Timeline">
+    <input type="button" id="save" value="&uarr; Guardar" title="Guardar datos del Timeline al textarea">
+  </div>
+  <div id="dataSerialization"></div>
+</div>

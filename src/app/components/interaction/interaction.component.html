@@ -1,0 +1,45 @@
+<h2>Interraccion</h2>
+
+<button (click)="animate_window()">animate_window</button>
+<div [hidden]="!mostrar_animate_window">
+  <p>Este ejemplo muestra funciones para ajustar mediante programación la ventana visible de la línea de tiempo.</p>
+  <button (click)="first_secondData()">Ventana de Noviembre 2018 a Enero 2019</button><br>
+  <button (click)="first_secondDataNoAmination()">Ventana de Noviembre 2018 a Enero 2019 (No animación)</button><br>
+  <button (click)="goToChristmas()">Centrar en Navidad</button><br>
+  <button (click)="seeAll()">Ajustar para ver todos</button><br>
+  <button (click)="selectAndFocus()">Seleccionar y enfocar Cumpleaños Lorena y Maria</button><br>
+  <button (click)="focus()">Enfocas Cambio horario</button><br>
+  <button (click)="focusAnimation()">Enfocar Cumpleaños Lorena y Maria (animación lenta y lineal)</button><br>
+  <button (click)="focusSelect()">Enfocar al seleccionado</button><br>
+  <div id="animate_window"></div>
+</div>
+
+<br>
+<button (click)="click_to_use()">click_to_use</button>
+<div [hidden]="!mostrar_click_to_use" id="main">
+  <p>Este ejemplo muestra cómo usar la opción clickToUse: antes de que pueda desplazarse y arrastrar en la línea de tiempo, primero debe hacer clic en la línea de tiempo para activarla.</p>
+  <div id="click_to_use"></div>
+</div>
+
+<br>
+<button (click)="event_listeners()">event_listeners</button>
+<div [hidden]="!mostrar_event_listeners">
+  <p>Este ejemplo escucha los eventos <code>select</code>, <code>click</code>, <code>doubleClick</code>, <code>rangechange</code>, y <code>rangechanged</code> del Timeline (otros possibles eventos: <code>mouseDown</code>, <code>mouseUp</code>, <code>mouseOver</code>, <code>mouseMove</code>), y escucha los cambios en el DataSet (<code>add</code>, <code>update</code>, o <code>remove</code> items).</p>
+  <div id="event_listeners"></div>
+  <div id="log" style="overflow-y: auto; height:150px;"></div>
+</div>
+
+<br>
+<button (click)="limit_move_zoom()">limit_move_zoom</button>
+<div [hidden]="!mostrar_limit_move_zoom">
+  <p>
+    El rango para el Timeline esta limitado de la siguiente manera:
+  </p>
+  <ul>
+    <li>La fecha mínima visible está limitada a 2018-01-01 usando la opción <code>min</code></li>
+    <li>La fecha máxima visible está limitada a 2019-01-01 (excluida) usando la opción <code>max</code></li>
+    <li>El zoom visible se limita a un mínimo de 24 horas usando la opción <code>zoomMin</code></li>
+    <li>El zoom visible se limita a un máximo de aprox. 3 meses usando la opción <code>zoomMax</code></li>
+  </ul>
+  <div id="limit_move_zoom"></div>
+</div>

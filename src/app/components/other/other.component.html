@@ -1,0 +1,67 @@
+<h2>Otros</h2>
+
+<button (click)="dragdrop()">dragdrop</button>
+<div [hidden]="!mostrar_dragdrop" id="dragdropContenido">
+  <p>Para que esto funcione, tendrá que definir su propio 'dragstart'EventListener en cada elemento de su lista de
+    elementos (asegúrese de que cualquier nuevo elemento agregado a la lista esté adjunto a este controlador de eventos
+    EventListener 'dragstart'). Este controlador 'dragstart' debe establecerse dataTransfer: observe que puede
+    configurar la información del elemento como desee de esta manera.</p>
+  <div id="dragdrop"></div>
+  <div class='items-panel'>
+    <div class='side'>
+      <h3>Items:</h3>
+      <ul class="items">
+        <li draggable="true" class="item">
+          item 1 - box
+        </li>
+        <li draggable="true" class="item">
+          item 2 - point
+        </li>
+        <li draggable="true" class="item">
+          item 3 - range
+        </li>
+        <li draggable="true" class="item">
+          item 3 - range - fixed times - <br>
+          (start: ahora, end: ahora + 10 min)
+        </li>
+      </ul>
+    </div>
+    <div class='side'>
+      <h3>Seleccionado item: "item" con Inicio: "start", Final: "end".</h3>
+      <li draggable="true" class="object-item">
+        Objeto con item:'item'
+      </li>
+    </div>
+  </div>
+</div>
+<br>
+<button (click)="localization()">localization</button>
+<div [hidden]="!mostrar_localization"  id="localizationContenido">
+  <p>Para localizar la línea de tiempo, uno tiene que cargar una versión de moment.js incluyendo las configuraciones
+    regionales. Para establecer una configuración regional, especifique la opción {{'{'}}locale: STRING{{'}'}}.</p>
+  <p>
+    <label for="locale">Selecciona un idioma:</label>
+    <select id="locale">
+      <option value="en" selected>Inglés</option>
+      <option value="it">Italiano</option>
+      <option value="nl">Holandés</option>
+      <option value="de">Alemán</option>
+    </select>
+  </p>
+  <div id="localization"></div>
+</div>
+<br>
+<button (click)="timezone()">timezone</button>
+<div [hidden]="!mostrar_timezone" id="timezoneContenido">
+  <p>La siguiente demostración muestra cómo mostrar los elementos en la hora local (predeterminado), en UTC o para un
+    desplazamiento de zona horaria específico. Al configurar su propio momentconstructor, puede mostrar los elementos
+    en la zona horaria que desee. Todas las líneas de tiempo tienen la misma fecha de inicio y finalización.</p>
+  <b>Local time</b>
+  <div id="utctime1"></div>
+
+  <b>UTC</b>
+  <div id="utctime"></div>
+
+  <b>UTC +08:00</b>
+  <div id="utctime8"></div>
+</div>
