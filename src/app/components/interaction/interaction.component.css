@@ -1,14 +1,30 @@
-body, html {
+/* animateWindow */
+#animate_windowContenido{
     font-family: arial, sans-serif;
     font-size: 11pt;
 }
-input {
-    margin: 2px 0;
+#animate_windowContenido input{
+    margin: 2px 0;   
 }
-#main {
+
+/* click_to_use */
+#click_to_useContenido{
+    font-family: arial, sans-serif;
+    font-size: 11pt;
     width: 728px;
     margin: 0 auto;
 }
-.container {
+#click_to_useContenido .container {
     margin: 10px;
+}
+
+/* event_listeners */
+#event_listenersContenido{
+    font-family: sans-serif;
+}
+
+/* limit_move_zoom */
+#limit_move_zoomContenido{
+    font-family: arial, sans-serif;
+    font-size: 11pt;
 }

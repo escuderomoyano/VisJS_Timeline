@@ -1,7 +1,7 @@
 <h2>Interraccion</h2>
 
 <button (click)="animate_window()">animate_window</button>
-<div [hidden]="!mostrar_animate_window">
+<div [hidden]="!mostrar_animate_window" id="animate_windowContenido">
   <p>Este ejemplo muestra funciones para ajustar mediante programación la ventana visible de la línea de tiempo.</p>
   <button (click)="first_secondData()">Ventana de Noviembre 2018 a Enero 2019</button><br>
   <button (click)="first_secondDataNoAmination()">Ventana de Noviembre 2018 a Enero 2019 (No animación)</button><br>
@@ -16,14 +16,14 @@
 
 <br>
 <button (click)="click_to_use()">click_to_use</button>
-<div [hidden]="!mostrar_click_to_use" id="main">
+<div [hidden]="!mostrar_click_to_use" id="click_to_useContenido">
   <p>Este ejemplo muestra cómo usar la opción clickToUse: antes de que pueda desplazarse y arrastrar en la línea de tiempo, primero debe hacer clic en la línea de tiempo para activarla.</p>
   <div id="click_to_use"></div>
 </div>
 
 <br>
 <button (click)="event_listeners()">event_listeners</button>
-<div [hidden]="!mostrar_event_listeners">
+<div [hidden]="!mostrar_event_listeners" id="event_listenersContenido">
   <p>Este ejemplo escucha los eventos <code>select</code>, <code>click</code>, <code>doubleClick</code>, <code>rangechange</code>, y <code>rangechanged</code> del Timeline (otros possibles eventos: <code>mouseDown</code>, <code>mouseUp</code>, <code>mouseOver</code>, <code>mouseMove</code>), y escucha los cambios en el DataSet (<code>add</code>, <code>update</code>, o <code>remove</code> items).</p>
   <div id="event_listeners"></div>
   <div id="log" style="overflow-y: auto; height:150px;"></div>
@@ -31,7 +31,7 @@
 
 <br>
 <button (click)="limit_move_zoom()">limit_move_zoom</button>
-<div [hidden]="!mostrar_limit_move_zoom">
+<div [hidden]="!mostrar_limit_move_zoom" id="limit_move_zoomContenido">
   <p>
     El rango para el Timeline esta limitado de la siguiente manera:
   </p>

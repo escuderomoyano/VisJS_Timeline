@@ -3,15 +3,14 @@
     font-size: 11pt;
 }
 
-textarea {
+#dataSerializationContenido textarea {
     width: 800px;
     height: 200px;
 }
-
-.buttons {
+#dataSerializationContenido .buttons {
     margin: 20px 0;
-}
+  }
 
-.buttons input {
+ #dataSerializationContenido .buttons input {
     padding: 10px;
-}
+  }

@@ -30,7 +30,6 @@ export class OtherComponent implements OnInit {
 
   ngOnInit() {
   }
-
   dragdrop(): void {
 
     //Funcion al arrastrar de la lista items hacia el timeline

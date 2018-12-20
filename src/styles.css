@@ -7,3 +7,150 @@ indigo-pink.css
 pink-bluegrey.css
 purple-green.css
 */
+/* individualEditableItems y overrideEditingItems */
+#individualEditableItems div.vis-readonly,
+#individualEditableItems div.vis-readonly.vis-selected {
+    background-color: #ff4500;
+    border-color: red;
+    color: white;
+}
+#overrideEditingItems div.vis-readonly,
+#overrideEditingItems div.vis-readonly.vis-selected {
+    background-color: #ff4500;
+    border-color: red;
+    color: white;
+}
+/* backgroundAreas */
+#backgroundAreas .vis-item.vis-background.negative {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+#htmlContents span {
+    color: red;
+}
+#htmlContents span.large {
+    font-size: 200%;
+}
+
+/* */
+#visibleDynamicContent .progress-wrapper {
+    background: white;
+    width: 100%;
+    height: 18px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #visibleDynamicContent .progress {
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #63ed63;
+  }
+  
+  #visibleDynamicContent .progress-label {
+    position: absolute;
+    z-index: 1;
+  }
+
+#customCss .vis-timeline {
+border: 2px solid purple;
+font-family:  purisa, 'comic sans', cursive;
+font-size: 12pt;
+background: #ffecea;
+}
+
+#customCss .vis-item {
+border-color: #F991A3;
+background-color: pink;
+font-size: 15pt;
+color: purple;
+box-shadow: 5px 5px 20px rgba(128,128,128, 0.5);
+}
+
+#customCss .vis-item, #customCss .vis-item.vis-line {
+border-width: 3px;
+}
+
+#customCss .vis-item.vis-dot {
+border-width: 10px;
+border-radius: 10px;
+}
+
+#customCss .vis-item.vis-selected {
+border-color: green;
+background-color: lightgreen;
+}
+
+#customCss .vis-time-axis .vis-text {
+color: purple;
+padding-top: 10px;
+padding-left: 10px;
+}
+
+#customCss .vis-time-axis .vis-text.vis-major {
+font-weight: bold;
+}
+
+#customCss .vis-time-axis .vis-grid.vis-minor {
+border-width: 2px;
+border-color: pink;
+}
+
+#customCss .vis-time-axis .vis-grid.vis-major {
+border-width: 2px;
+border-color: #F991A3;
+}
+
+
+#itemClassNames .vis-item.green {
+    background-color: greenyellow;
+    border-color: green;
+  }
+
+/* create a custom sized dot at the bottom of the red item */
+#itemClassNames .vis-item.red {
+background-color: red;
+border-color: darkred;
+color: white;
+font-family: monospace;
+box-shadow: 0 0 10px gray;
+}
+#itemClassNames .vis-item.vis-dot.red {
+border-radius: 10px;
+border-width: 10px;
+}
+#itemClassNames .vis-item.vis-line.red {
+border-width: 5px;
+}
+#itemClassNames .vis-item.vis-box.red {
+border-radius: 0;
+border-width: 2px;
+font-size: 24pt;
+font-weight: bold;
+}
+
+#itemClassNames .vis-item.orange {
+background-color: gold;
+border-color: orange;
+}
+#itemClassNames .vis-item.vis-selected.orange {
+/* custom colors for selected orange items */
+background-color: orange;
+border-color: orangered;
+}
+
+#itemClassNames .vis-item.magenta {
+background-color: magenta;
+border-color: purple;
+color: white;
+}
+
+#itemClassNames .vis-item.vis-selected {
+background-color: white;
+border-color: black;
+color: black;
+box-shadow: 0 0 10px gray;
+}
