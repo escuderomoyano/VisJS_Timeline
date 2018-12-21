@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { 
+import {
   HomeComponent,
   NavbarComponent,
   BasicUsageComponent,
@@ -13,19 +13,21 @@ import {
   GroupsComponent,
   StylingComponent,
   DataHandlingComponent,
+  OtherComponent,
   Pagina404Component
 } from './components/index';
 
 //Importaciones para angular material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material';
-import { OtherComponent } from './components/other/other.component';
+
+//Angular Flex-Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    Pagina404Component,
     NavbarComponent,
     BasicUsageComponent,
     InteractionComponent,
@@ -34,14 +36,17 @@ import { OtherComponent } from './components/other/other.component';
     GroupsComponent,
     StylingComponent,
     DataHandlingComponent,
-    OtherComponent
+    OtherComponent,
+    Pagina404Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //Importacion para angular material
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    //Angular Flex
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
